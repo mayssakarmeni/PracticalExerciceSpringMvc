@@ -10,7 +10,7 @@ public interface IbookDAO {
 
     public List<Book>  getAll();
 	public Book getbookByID(Long idBook);
-	public Book addbook(Book book);
+	public void addbook(Book book);
 	public void updatebook(Book book);
 	public void deletebook(Long id) ;
 	

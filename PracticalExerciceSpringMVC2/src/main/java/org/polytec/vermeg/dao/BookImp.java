@@ -35,10 +35,10 @@ public class BookImp implements IbookDAO {
 
 
 	@Override
-	public Book addbook(Book book) {
+	public void addbook(Book book) {
 		Session session = this.sessionFactory.getCurrentSession();
 		session.persist(book);
-		return book;
+		
 	}
 
 
